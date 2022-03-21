@@ -1,5 +1,4 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import { Formik, Form as FormikForm, Field, ErrorMessage } from "formik";
 import { Container, Row, Col, Form, FormControl } from "react-bootstrap";
 import * as yup from "yup";
@@ -12,7 +11,7 @@ const validationSchema = yup.object({
 
   message: yup.string().required("Message is Required"),
 });
-const EnquireForm = (props) => {
+const EnquireForm = () => {
   return (
     <Container>
       <Row className=" d-flex justify-content-center">
@@ -20,8 +19,14 @@ const EnquireForm = (props) => {
           <Formik
             validationSchema={validationSchema}
             initialValues={{ email: "", message: "" }}
-            onSubmit={(values) => {
+            onSubmit={(values, actions) => {
               console.log(values);
+              actions.resetForm({
+                values: {
+                  email: "",
+                  message: "",
+                },
+              });
             }}
           >
             <FormikForm>
@@ -54,9 +59,6 @@ const EnquireForm = (props) => {
                     background: "#E63732",
                     color: "#fff",
                     border: "none",
-                  }}
-                  onClick={() => {
-                    props.onHide();
                   }}
                 >
                   Submit

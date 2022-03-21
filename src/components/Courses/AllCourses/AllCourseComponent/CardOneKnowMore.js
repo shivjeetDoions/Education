@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import { Button, Modal } from "react-bootstrap";
 function CardOneKnowMore(props) {
   console.log(props);
   return (

@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import ApplyNow from "../Button/ApplyNow";
 import EnquireNow from "../Button/EnquireNow";
 import KnowMore from "../Button/KnowMore";
 import SecOneHM from "../HomeComponents/SecOneHM";

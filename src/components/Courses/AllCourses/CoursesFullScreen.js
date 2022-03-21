@@ -1,5 +1,5 @@
 import React from "react";
-import { Fade, Modal } from "react-bootstrap";
+import { Modal } from "react-bootstrap";
 import AllCourses from "./AllCourse";
 import closeBtn from "../Image/closeBtn.png";
 

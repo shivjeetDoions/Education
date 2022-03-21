@@ -20,10 +20,10 @@ function Footer() {
           </p>
         </Col>
         <Col className="d-flex align-items-center  justify-content-center">
-          <a href="https://www.facebook.com/doionsengineering" target="_blank">
+          <a href="https://www.facebook.com/doionsengineering" target="blank">
             <AiFillFacebook size={70} />
           </a>
-          <a href="https://www.instagram.com/doions_education/" target="_blank">
+          <a href="https://www.instagram.com/doions_education/" target="blank">
             <AiFillInstagram size={70} />
           </a>
         </Col>
