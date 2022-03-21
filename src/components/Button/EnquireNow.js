@@ -43,7 +43,7 @@ function EnquiryNow(...props) {
   return (
     <>
       <button
-        className="p-2 px-4 fw-bold "
+        className="p-2 m-3 m-md-0 px-4 fw-bold "
         style={{
           background: "#E63732",
           color: "#fff",

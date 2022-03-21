@@ -4,7 +4,7 @@ function KnowMore() {
   return (
     <div className="p-0">
       <button
-        className="p-2 px-4 fw-bold border border-dark "
+        className="p-2 m-3 m-md-0 px-4 fw-bold border border-dark "
         style={{ background: "white" }}
       >
         Know more
