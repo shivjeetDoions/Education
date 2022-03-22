@@ -63,22 +63,36 @@ a:-webkit-any-link {
 a:hover:-webkit-any-link {
   color: initial;
 }
-
-.modal-dialog {
-  transition-duration: 2s !important;
+@keyframes modalFade {
+  from {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
-/* .modal {
-  position: absolute;
-  top: 50px;
-  right: 100px;
-  bottom: 0;
-  left: 0;
-  z-index: 10040;
-  overflow: auto;
-  overflow-y: auto;
-  ----------------------
-   position: absolute;
-  top: 0%;
-  left: 20%;
-  transform: translate(50%, 100%);
+.animatemodal {
+  animation-name: modalFade;
+  animation-duration: 2s;
+}
+@keyframes modalFadeEnq {
+  from {
+    transform: translate(0%) scale(0%);
+
+    /* opacity: 0; */
+  }
+  to {
+    transform: translateY(0) scale(100%);
+    /* opacity: 1; */
+  }
+}
+.animatemodalEnquire {
+  animation-name: modalFadeEnq;
+  animation-duration: 0.3s;
+}
+
+/* .modal-dialog {
+  transition-duration: 2s !important;
 } */

@@ -8,7 +8,7 @@ function MyVerticallyCenteredModal(props) {
     <Modal
       {...props}
       size="xl"
-      dialogClassName="modal-90w"
+      dialogClassName="animatemodal"
       aria-labelledby="contained-modal-title-vcenter"
       centered
     >

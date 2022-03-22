@@ -17,7 +17,7 @@ function Navigation() {
           Blog
         </a>
         <a href="#ContactUs" className="mx-5 p-2 navStyle">
-          ContactUs
+          Contact Us
         </a>
       </Nav>
     </>
