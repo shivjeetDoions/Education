@@ -9,7 +9,7 @@ import CardOneTime from "./AllCourseComponent/CardOneTime";
 function CardOne(props) {
   return (
     <div>
-      <Container className="border border-Secondary p-0 m-3">
+      <Container className="border border-Secondary p-0 mb-3">
         <CardOneImg />
         <CardOneTime />
         <CardOneMH />

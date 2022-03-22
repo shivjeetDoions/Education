@@ -6,7 +6,7 @@ import ContactMH from "./ContactMH";
 function index() {
   return (
     <div>
-      <Container className="py-5">
+      <Container className="py-0 py-md-5">
         <Row>
           <Col className="d-flex justify-content-center py-5 my-5">
             <ContactMH />

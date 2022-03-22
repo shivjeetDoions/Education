@@ -18,7 +18,7 @@ function MyVerticallyCenteredModal(props) {
                 md={11}
                 className="d-flex flex-column justify-content-center align-items-center text-white"
               >
-                <h1>Enquire now</h1>
+                <h1>ENQUIRE NOW</h1>
               </Col>
               <Col md={1} className=" p-2 fw-bold">
                 <CloseButton variant="white" onClick={props.onHide} />
@@ -48,6 +48,7 @@ function EnquiryNow(...props) {
           background: "#E63732",
           color: "#fff",
           border: "none",
+          fontSize: "26px",
         }}
         onClick={() => setModalShow(true)}
       >

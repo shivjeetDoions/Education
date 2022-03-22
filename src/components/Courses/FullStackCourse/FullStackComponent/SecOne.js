@@ -8,7 +8,7 @@ import KnowMore from "../../../Button/KnowMore";
 function SecOne() {
   return (
     <div>
-      <Container className="py-5 my-5">
+      <Container className="py-0 py-md-5 my-0 my-md-5">
         <Row>
           <Col sm={12} md={6} className="d-flex flex-column align-self-end">
             <SecOneMH />
@@ -19,10 +19,10 @@ function SecOne() {
           </Col>
         </Row>
         <Row className="d-flex align-self-start">
-          <Col md={2}>
+          <Col md={3}>
             <ApplyNow />
           </Col>
-          <Col md={2}>
+          <Col md={3}>
             <KnowMore />
           </Col>
         </Row>

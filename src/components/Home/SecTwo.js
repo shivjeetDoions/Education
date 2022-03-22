@@ -6,7 +6,7 @@ import SecTwoMsg from "../HomeComponents/SecTwoMsg";
 function SecTwo() {
   return (
     <div>
-      <Container className="py-5 my-5">
+      <Container className="py-0 py-md-5 my-0 my-md-5">
         <Row>
           <Col sm={12} md={6}>
             <SecTwoImg />

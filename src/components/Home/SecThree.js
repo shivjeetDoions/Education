@@ -7,7 +7,7 @@ import SecThreeMsg from "../HomeComponents/SecThreeMsg";
 function SecThree() {
   return (
     <div>
-      <Container className="py-5 my-5">
+      <Container className="py-5 my-sm-0 my-md-5">
         <Row>
           <Col className="py-5">
             <SecThreeMH />

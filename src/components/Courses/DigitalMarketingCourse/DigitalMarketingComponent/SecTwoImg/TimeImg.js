@@ -3,7 +3,6 @@ import img1 from "../../../Image/time.png";
 function TimeImg() {
   return (
     <div>
-      {" "}
       <img
         src={img1}
         alt="SceTwoImg"

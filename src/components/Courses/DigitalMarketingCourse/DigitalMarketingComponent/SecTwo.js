@@ -12,26 +12,54 @@ function SecTwo() {
         <h1 className="d-flex justify-content-center fw-bold py-5 mt-5">
           Course Details
         </h1>
-        <Row className="d-flex justify-content-start align-items-center">
-          <Col>
-            <TimeImg />
-            <p>Awailable </p>
-            <p>in shifts</p>
+        <Row>
+          <Col md={3} className="py-3">
+            <div
+              className="d-flex justify-content-center align-items-center"
+              style={{ height: "200px" }}
+            >
+              <TimeImg />
+            </div>
+            <div className="d-flex justify-content-center text-center">
+              <p>
+                Awailable <br /> in shifts
+              </p>
+            </div>
           </Col>
-          <Col>
-            <RupayImg />
-            <p>
-              5900/- <br />
-              (taxes applicable)
-            </p>
+          <Col md={3} className="py-3">
+            <div
+              className="d-flex justify-content-center align-items-center"
+              style={{ height: "200px" }}
+            >
+              <RupayImg />
+            </div>
+            <div className="d-flex justify-content-center text-center">
+              <p>
+                5900/- <br /> (taxes applicable)
+              </p>
+            </div>
           </Col>
-          <Col>
-            <OfflineImg />
-            <p>Mode</p>
+          <Col md={3} className="py-3">
+            <div
+              className="d-flex justify-content-center align-items-center"
+              style={{ height: "200px" }}
+            >
+              <OfflineImg />
+            </div>
+            <div className="d-flex justify-content-center align-items-center">
+              <p>Mode</p>
+            </div>
           </Col>
-          <Col>
-            <ColanderImg />
-            <p>30 day - 25 Hours</p>
+          <Col md={3} className="py-3">
+            <div
+              className="d-flex justify-content-center align-items-center"
+              style={{ height: "200px" }}
+            >
+              <ColanderImg />
+            </div>
+            <div className="d-flex justify-content-center align-items-center">
+              <p>30 day - 25 Hours</p>
+            </div>
           </Col>
         </Row>
         <Row>

@@ -3,7 +3,6 @@ import img1 from "../../../Image/rupay.png";
 function RupayImg() {
   return (
     <div>
-      {" "}
       <img
         src={img1}
         alt="SceTwoImg"

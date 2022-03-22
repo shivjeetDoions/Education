@@ -7,7 +7,7 @@ function AllCourse(props) {
   return (
     <div>
       <Container>
-        <h1 className="d-flex justify-content-center py-5 mb-5 fw-bold">
+        <h1 className="d-flex justify-content-center py-0 mb-0 mb-md-5 fw-bold">
           Courses
         </h1>
         <Row className="d-flex justify-content-around">

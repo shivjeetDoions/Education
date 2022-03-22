@@ -8,7 +8,7 @@ function SecFour() {
     <div>
       <Container className="py-5">
         <Row>
-          <Col className="py-5 my-5">
+          <Col className="py-0 py-md-5 my-sm-0 my-md-5">
             <SecFourMH />
           </Col>
         </Row>
