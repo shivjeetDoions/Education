@@ -35,6 +35,7 @@ const EnquireForm = () => {
                 placeholder="E-mail"
                 type="email"
                 as={FormControl}
+                style={{ borderRadius: "0px" }}
               />
               <ErrorMessage name="email" render={CustomError} />
               <br />
@@ -44,7 +45,7 @@ const EnquireForm = () => {
                   <Form.Control
                     as="textarea"
                     placeholder="Message"
-                    style={{ height: "100px" }}
+                    style={{ height: "100px", borderRadius: "0px" }}
                     {...field}
                   />
                 )}

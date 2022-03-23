@@ -75,7 +75,7 @@ a:hover:-webkit-any-link {
 }
 .animatemodal {
   animation-name: modalFade;
-  animation-duration: 2s;
+  animation-duration: 1s;
 }
 @keyframes modalFadeEnq {
   from {
