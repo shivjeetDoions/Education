@@ -2,7 +2,7 @@ import React from "react";
 
 function SecThreeMsg() {
   return (
-    <div>
+    <div className="pt-4 pt-md-0">
       <p>
         We believe that skill learning is essential to become good at what you
         really want to become.

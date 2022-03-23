@@ -8,7 +8,7 @@ function index() {
     <div>
       <Container className="py-0 py-md-5">
         <Row>
-          <Col className="d-flex justify-content-center py-5 my-5">
+          <Col className="d-flex justify-content-center py-0 py-md-5 my-5">
             <ContactMH />
           </Col>
         </Row>

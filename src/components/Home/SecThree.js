@@ -9,15 +9,19 @@ function SecThree() {
     <div>
       <Container className="py-5 my-sm-0 my-md-5">
         <Row>
-          <Col className="py-5">
+          <Col className="py-0 py-md-5">
             <SecThreeMH />
           </Col>
         </Row>
         <Row>
-          <Col sm={12} md={6}>
+          <Col xs={{ span: 12, order: 2 }} sm={{ span: 6, order: 1 }}>
             <SecThreeMsg />
           </Col>
-          <Col sm={12} md={6} className="d-flex align-items-center">
+          <Col
+            xs={{ span: 12, order: 1 }}
+            sm={{ span: 6, order: 1 }}
+            className="d-flex align-items-center"
+          >
             <SecThreeImg />
           </Col>
         </Row>

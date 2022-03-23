@@ -1,15 +1,14 @@
 import React from "react";
 import { Nav } from "react-bootstrap";
-import CoursesFullScreen from "./Courses/AllCourses/CoursesFullScreen";
+import { Link } from "react-router-dom";
 
 function Navigation() {
   return (
     <>
       <Nav className="ms-auto">
-        <CoursesFullScreen />
-        {/* <Link to="/Blog" className="mx-5 nav-link text-dark navStyle">
-          Blog
-        </Link> */}
+        <Link to="/Courses" className="mx-5 nav-link text-dark navStyle">
+          Courses
+        </Link>
         <a
           href=" https://doionseducation.myty.in/"
           className="mx-5 p-2 navStyle"

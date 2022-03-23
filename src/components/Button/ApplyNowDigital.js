@@ -41,13 +41,7 @@ function ApplyNowDigital() {
     <div className="">
       <button
         onClick={() => setModalShow(true)}
-        className="p-2 m-3 m-md-0 px-4 fw-bold "
-        style={{
-          background: "#E63732",
-          color: "#fff",
-          border: "none",
-          fontSize: "26px",
-        }}
+        className="p-2 m-2 m-md-0 px-2 px-md-4 fw-bold Custombutton"
       >
         Apply now
       </button>

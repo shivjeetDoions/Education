@@ -19,10 +19,10 @@ function SecOne() {
           </Col>
         </Row>
         <Row className="d-flex align-self-start">
-          <Col md={3}>
+          <Col xs={{ span: 6, offset: 0 }} sm={{ span: 3, offset: 0 }}>
             <ApplyNow />
           </Col>
-          <Col md={3}>
+          <Col xs={{ span: 6, offset: 0 }} sm={{ span: 3, offset: 0 }}>
             <KnowMore />
           </Col>
         </Row>

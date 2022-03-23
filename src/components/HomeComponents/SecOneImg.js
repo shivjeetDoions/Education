@@ -6,7 +6,7 @@ function SecOneImg() {
       <img
         src={img1}
         alt="SceTwoImg"
-        className="img-fluid"
+        className="img-fluid heroSecImg"
         width="750px"
         height="400px"
       />

@@ -9,15 +9,15 @@ function SecFive() {
     <div>
       <Container className="py-0 py-md-5">
         <Row>
-          <Col className="d-flex justify-content-center">
+          <Col className="d-flex justify-content-center text-center">
             <SecFiveMH />
           </Col>
         </Row>
-        <Row>
-          <Col sm={12} md={6}>
+        <Row className="align-item-center">
+          <Col xs={{ span: 12, order: 2 }} sm={{ span: 6, order: 1 }}>
             <SecFiveMsg />
           </Col>
-          <Col sm={12} md={6}>
+          <Col xs={{ span: 12, order: 1 }} sm={{ span: 6, order: 2 }}>
             <SecFiveImg />
           </Col>
         </Row>

@@ -1,5 +1,5 @@
 import React from "react";
-import FullStact from "../../Image/FullStack.png";
+import FullStact from "../../Image/DigitalMarketing.png";
 function SecOneImg() {
   return (
     <div>

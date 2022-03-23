@@ -6,17 +6,17 @@ import SecFourMsg from "../HomeComponents/SecFourMsg";
 function SecFour() {
   return (
     <div>
-      <Container className="py-5">
+      <Container className="py-0 py-md-5">
         <Row>
           <Col className="py-0 py-md-5 my-sm-0 my-md-5">
             <SecFourMH />
           </Col>
         </Row>
         <Row>
-          <Col sm={12} md={6}>
+          <Col xs={{ span: 12, order: 1 }} sm={{ span: 6 }}>
             <SecFourImg />
           </Col>
-          <Col sm={12} md={6}>
+          <Col xs={{ span: 12, order: 1 }} sm={{ span: 6 }}>
             <SecFourMsg />
           </Col>
         </Row>

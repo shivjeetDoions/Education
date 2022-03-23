@@ -2,7 +2,7 @@ import React from "react";
 import img4 from "../../image/imgFour.png";
 function SecFourImg() {
   return (
-    <div>
+    <div className="me-0 me-md-4">
       <img
         src={img4}
         alt="SceTwoImg"

@@ -3,10 +3,7 @@ import React from "react";
 function KnowMore() {
   return (
     <div className="p-0">
-      <button
-        className="p-2 m-3 m-md-0 px-4 fw-bold border border-dark "
-        style={{ background: "white", fontSize: "26px" }}
-      >
+      <button className="p-2  px-2 px-md-4 m-2 fw-bold border border-dark CustomKmorebtn ">
         Know more
       </button>
     </div>

@@ -5,7 +5,7 @@ function SecFour() {
   return (
     <div>
       <Container>
-        <h1 className="d-flex justify-content-center text-center fw-bold py-5 ">
+        <h1 className="d-flex justify-content-center text-center fw-bold py-0 py-md-5  ">
           What other benefits you will get with <br /> this course?
         </h1>
         <ol className="py-5">

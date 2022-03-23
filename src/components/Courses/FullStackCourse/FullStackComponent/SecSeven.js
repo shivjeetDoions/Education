@@ -4,7 +4,7 @@ function SecSeven() {
   return (
     <div>
       <Container>
-        <h1 className="d-flex justify-content-center py-5 mt-5">
+        <h1 className="d-flex justify-content-center py-5 ">
           Who this course is for
         </h1>
         <ul>

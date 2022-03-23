@@ -18,12 +18,12 @@ function SecOne() {
             <SecOneImg />
           </Col>
         </Row>
-        <Row className="d-flex align-self-start">
-          <Col md={3}>
-            <EnquireNow />
-          </Col>
-          <Col md={3}>
-            <KnowMore />
+        <Row>
+          <Col md={5}>
+            <div className="d-flex justify-content-between mb-5  ">
+              <EnquireNow />
+              <KnowMore />
+            </div>
           </Col>
         </Row>
       </Container>

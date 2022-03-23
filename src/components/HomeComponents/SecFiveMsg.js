@@ -2,34 +2,32 @@ import React from "react";
 
 function SecFiveMsg() {
   return (
-    <div>
-      <p>
-        If you are a complete beginner, you
-        <br /> can start with a short term course of <br /> basic fundamental,
-        which will make you
-        <br /> learn the concept of programming as an <br /> absolute beginner.{" "}
-      </p>
-      <p>
-        DOIONS Education, Offers a wide range <br /> of courses depending upon
-        your
-        <br /> expertise level.
-      </p>
-      <p>
-        For intermediate and advance learning <br /> we offer an extensive
-        program called
-        <br /> Bootcamp.
-      </p>
-      <p>
-        To know more about the courses based
-        <br /> on your learning goal and expertise.
-      </p>
-      <a href="/" className="text-danger fw-bold">
-        Checkout our courses here
-      </a>
-      {/* <p className="pt-3">Apply for our courses here.</p> */}
-
-      {/* <CalltoAction /> */}
-    </div>
+    <>
+      <div className="pt-4 pt-sm-0">
+        <p>
+          If you are a complete beginner, you can start with a short term course
+          of basic fundamental, which will make you learn the concept of
+          programming as an absolute beginner.
+        </p>
+        <p>
+          DOIONS Education, Offers a wide range of courses depending upon your
+          expertise level.
+        </p>
+        <p>
+          For intermediate and advance learning we offer an extensive program
+          called Bootcamp.
+        </p>
+        <p>
+          To know more about the courses based on your learning goal and
+          expertise.
+        </p>
+      </div>
+      <div>
+        <a href="/Courses" className="text-danger fw-bold  pt-5 LinkAtag">
+          Checkout our courses here
+        </a>
+      </div>
+    </>
   );
 }
 

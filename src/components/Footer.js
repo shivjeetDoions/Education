@@ -6,7 +6,7 @@ function Footer() {
   return (
     <Container fluid className="ftr p-5 mt-5">
       <Row className="d-flex justify-content-center  align-items-center ">
-        <Col className="d-flex justify-content-start  align-items-center ms-5 ps-5">
+        <Col className="d-flex justify-content-center  align-items-center ms-0 ms-md-5 ps-0 ps-md-5">
           <div>
             <h1>Contact Detail</h1>
             <p>www.doions.com</p>
@@ -14,7 +14,7 @@ function Footer() {
             <p>932972268/0761-3500430</p>
           </div>
         </Col>
-        <Col className="d-flex justify-content-center  align-items-center">
+        <Col className="d-flex justify-content-center  align-items-center p-sm-0">
           <div>
             <h1>Address</h1>
             <p>
@@ -24,7 +24,10 @@ function Footer() {
             </p>
           </div>
         </Col>
-        <Col className="d-flex justify-content-end  align-items-center me-5 pe-5">
+        <Col
+          sm={4}
+          className="d-flex justify-content-center  align-items-center me-0 me-md-5 pe-0 pe-md-5 "
+        >
           <div>
             <a href="https://www.facebook.com/doionsengineering" target="blank">
               <AiFillFacebook size={70} />

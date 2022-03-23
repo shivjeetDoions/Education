@@ -34,6 +34,31 @@ button {
 .read-or-hide {
   color: blue;
 }
+.Custombutton {
+  background-color: #e63732;
+  color: #fff;
+  border: none;
+  font-size: 26px;
+}
+.CustomKmorebtn {
+  background-color: #fff;
+  font-size: 26px;
+}
+.logoimg {
+  width: 200px;
+}
+@media only screen and (max-width: 425px) {
+  p {
+    font-size: 15px;
+  }
+  .Custombutton {
+    font-size: 15px;
+  }
+  .CustomKmorebtn {
+    font-size: 15px;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .container {
     font-size: 18px;
@@ -44,6 +69,12 @@ button {
   }
   button {
     letter-spacing: 1px;
+  }
+  .heroSecImg {
+    display: none;
+  }
+  .logoimg {
+    width: 100px;
   }
 }
 .fullScreenHover:hover {
@@ -92,7 +123,11 @@ a:hover:-webkit-any-link {
   animation-name: modalFadeEnq;
   animation-duration: 0.3s;
 }
-
+.LinkAtag:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-color: #e63732;
+}
 /* .modal-dialog {
   transition-duration: 2s !important;
 } */

@@ -5,7 +5,7 @@ function SecFive() {
   return (
     <div>
       <Container>
-        <h1 className="d-flex justify-content-center text-center fw-bold py-5 mt-5">
+        <h1 className="d-flex justify-content-center text-center fw-bold py-5   ">
           Technologies that will get covered in <br /> this course
         </h1>
         <Row>

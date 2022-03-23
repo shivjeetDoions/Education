@@ -5,10 +5,10 @@ function SecSix() {
   return (
     <div>
       <Container>
-        <h1 className="d-flex justify-content-center fw-bold py-5 mt-5">
+        <h1 className="d-flex justify-content-center fw-bold py-5 ">
           Who should take this course?
         </h1>
-        <ul className="py-5">
+        <ul className="py-0">
           <li>Anyone who is curious about programming </li>
           <li> Entrepreneurs </li>
           <li>Those looking for a career change </li>

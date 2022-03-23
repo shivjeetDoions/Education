@@ -5,7 +5,7 @@ function SecThree() {
   return (
     <div>
       <Container>
-        <h1 className=" d-flex justify-content-center  fw-bold py-5">
+        <h1 className=" d-flex justify-content-center  fw-bold py-0 py-md-5 ">
           What you'll learn
         </h1>
         <p>
