@@ -8,7 +8,7 @@ function Footer() {
       <div className="d-flex justify-content-end fixed-bottom">
         <div className="CollNow d-flex justify-content-center  align-items-center  ">
           <a href="tel://932972268" className="h2 text-white">
-            coll
+            call
             <br />
             now
           </a>
