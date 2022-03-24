@@ -22,11 +22,6 @@ function SecFiveMsg() {
           expertise.
         </p>
       </div>
-      <div>
-        <a href="/Courses" className="text-danger fw-bold  pt-5 LinkAtag">
-          Checkout our courses here
-        </a>
-      </div>
     </>
   );
 }

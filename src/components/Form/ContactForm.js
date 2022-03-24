@@ -1,4 +1,5 @@
 import React from "react";
+import axios from "axios";
 import { Formik, Form as FormikForm, Field, ErrorMessage } from "formik";
 import { Container, Row, Col, Form, FormControl } from "react-bootstrap";
 import * as yup from "yup";
@@ -21,6 +22,20 @@ const EnquireForm = () => {
             initialValues={{ email: "", message: "" }}
             onSubmit={(values, actions) => {
               console.log(values);
+              actions.setSubmitting(
+                axios
+                  .post(
+                    "http://localhost:8090/api/message/doions-education",
+                    values
+                  )
+                  .then(function (response) {
+                    console.log(response);
+                  })
+                  .catch(function (error) {
+                    console.log(error.response);
+                  })
+              );
+
               actions.resetForm({
                 values: {
                   email: "",

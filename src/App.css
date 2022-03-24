@@ -131,3 +131,11 @@ a:hover:-webkit-any-link {
 /* .modal-dialog {
   transition-duration: 2s !important;
 } */
+.CollNow {
+  background-color: #e63732;
+  height: 100px;
+  width: 100px;
+  border: 1px solid #e63732;
+  border-radius: 79px;
+  color: #fff;
+}

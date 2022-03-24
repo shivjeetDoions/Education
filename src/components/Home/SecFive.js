@@ -21,6 +21,13 @@ function SecFive() {
             <SecFiveImg />
           </Col>
         </Row>
+        <Row className="pt-5">
+          <div>
+            <a href="/Courses" className="text-danger fw-bold LinkAtag">
+              Checkout our courses here
+            </a>
+          </div>
+        </Row>
       </Container>
     </div>
   );

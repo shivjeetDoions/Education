@@ -1,4 +1,5 @@
 import React from "react";
+import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { Container, Row, Col, FormControl } from "react-bootstrap";
@@ -29,9 +30,20 @@ const ApplyFormBeginner = () => {
           <Formik
             validationSchema={validationSchema}
             initialValues={{ name: "", phone: "", email: "" }}
-            onSubmit={(values) => {
+            onSubmit={(values, { setSubmitting }) => {
               console.log(values);
               navigate("/");
+              axios
+                .post(
+                  "http://localhost:8090/api/message/doions-education",
+                  values
+                )
+                .then(function (response) {
+                  console.log(response);
+                })
+                .catch(function (error) {
+                  console.log(error.response);
+                });
             }}
           >
             <Form>

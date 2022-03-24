@@ -14,14 +14,11 @@ function MyVerticallyCenteredModal(props) {
       <Modal.Body className="p-0">
         <div className=" p-3" style={{ background: "#E63732" }}>
           <Container>
-            <Row className="d-flex justify-content-center align-items-center">
-              <Col
-                md={11}
-                className="d-flex flex-column justify-content-center align-items-center text-white"
-              >
+            <Row className="d-flex justify-content-center align-items-center  flex-nowrap">
+              <Col className=" ms-5   text-nowrap text-white">
                 <h1>ENQUIRE NOW</h1>
               </Col>
-              <Col md={1} className=" p-2 fw-bold">
+              <Col className=" p-2 ms-2 fw-bold">
                 <CloseButton variant="white" onClick={props.onHide} />
               </Col>
             </Row>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Modal, Container, Col, Row } from "react-bootstrap";
+import { Modal, Container, Row } from "react-bootstrap";
 import ApplyFormBeginner from "../Form/ApplyFormBeginner";
 import CloseButton from "react-bootstrap/CloseButton";
 
@@ -15,17 +15,18 @@ function MyVerticallyCenteredModal(props) {
       <Modal.Body className="p-0">
         <div className=" p-3 mb-5" style={{ background: "#E63732" }}>
           <Container>
-            <Row className="d-flex justify-content-center align-items-center">
-              <Col
-                md={11}
-                className="d-flex flex-column justify-content-center align-items-center text-white"
-              >
-                <h2>APPLY FOR</h2>
-                <p>Beginner Full Stack Web Development</p>
-              </Col>
-              <Col md={1} className=" p-2 fw-bold">
+            <div className="d-flex justify-content-center  align-items-center  text-center">
+              <div className="text-white col-11">
+                <h2 className="text-nowrap  ">APPLY FOR</h2>
+              </div>
+              <div className="col=1 p-2 fw-bold">
                 <CloseButton variant="white" onClick={props.onHide} />
-              </Col>
+              </div>
+            </div>
+            <Row>
+              <div className="d-flex justify-content-center align-items-center text-center text-white ">
+                <p>Beginner Full Stack Web Development</p>
+              </div>
             </Row>
           </Container>
         </div>
