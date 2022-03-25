@@ -9,14 +9,20 @@ function SecFour() {
           What other benefits you will get with <br /> this course?
         </h1>
         <ol className="py-5">
-          <li>A certificate will be provided on completion</li>
           <li>
-            A life time access to student community channel on slack to connect
-            with fellow students
+            <p> A certificate will be provided on completion</p>
           </li>
           <li>
-            Get your FREE developer portfolio/blog with myty - 1 year access of
-            worth Rs 2100/-
+            <p>
+              A life time access to student community channel on slack to
+              connect with fellow students
+            </p>
+          </li>
+          <li>
+            <p>
+              Get your FREE developer portfolio/blog with myty - 1 year access
+              of worth Rs 2100/-
+            </p>
           </li>
         </ol>
       </Container>

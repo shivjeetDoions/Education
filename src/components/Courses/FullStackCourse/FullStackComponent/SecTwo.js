@@ -12,7 +12,7 @@ function SecTwo() {
         <h1 className=" py-5 d-flex justify-content-center fw-bold">
           Course Details
         </h1>
-        <Row>
+        <div className="row row-cols-2">
           <Col md={3} className="py-3">
             <div
               className="d-flex justify-content-center align-items-center"
@@ -62,7 +62,7 @@ function SecTwo() {
               <p>30 day - 25 Hours</p>
             </div>
           </Col>
-        </Row>
+        </div>
         <Row>
           <Col className="py-5">
             <p>

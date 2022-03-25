@@ -20,7 +20,7 @@ function SecOne() {
         </Row>
         <Row>
           <Col md={5}>
-            <div className="d-flex justify-content-between mb-5  ">
+            <div className="d-flex justify-content-between mb-5 pt-5  ">
               <EnquireNow />
               <KnowMore />
             </div>

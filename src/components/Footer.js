@@ -1,27 +1,37 @@
 import React from "react";
 
-import { AiFillFacebook, AiFillInstagram } from "react-icons/ai";
+import { AiFillFacebook, AiFillInstagram, AiFillPhone } from "react-icons/ai";
 import { Container, Row, Col } from "react-bootstrap";
 function Footer() {
   return (
-    <>
-      <div className="d-flex justify-content-end fixed-bottom">
-        <div className="CollNow d-flex justify-content-center  align-items-center  ">
-          <a href="tel://932972268" className="h2 text-white">
-            call
-            <br />
-            now
+    <div className="">
+      <div className="position-fixed bottom-0 end-0">
+        <span className="m-2 btn rounded-circle bg-danger p-4 text-center">
+          <a href="upi://932972268" className="h1 text-white mx-1 ">
+            <AiFillPhone style={{ transform: "rotateZ(10deg)" }} />
           </a>
-        </div>
+        </span>
       </div>
       <Container fluid className="ftr p-5 mt-5">
-        <Row className="d-flex justify-content-center  align-items-center ">
+        <Row className="d-flex justify-content-center align-items-center ">
           <Col className="d-flex justify-content-center  align-items-center ms-0 ms-md-5 ps-0 ps-md-5">
             <div>
               <h1>Contact Detail</h1>
-              <p>www.doions.com</p>
-              <p>info@doions.com</p>
-              <p>932972268/0761-3500430</p>
+              <a className="fs-5" href="www.doions.com" target="blank">
+                www.doions.com
+              </a>
+              <br />
+              <a className="fs-5" href="mailto://info@doions.com">
+                info@doions.com
+              </a>
+              <br />
+              <a className="fs-5" href="tel://932972268">
+                932972268
+              </a>
+              <br />
+              <a className="fs-5" href="tel://07613500430">
+                0761-3500430
+              </a>
             </div>
           </Col>
           <Col className="d-flex justify-content-center  align-items-center p-sm-0">
@@ -56,7 +66,7 @@ function Footer() {
           </Col>
         </Row>
       </Container>
-    </>
+    </div>
   );
 }
 

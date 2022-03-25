@@ -9,12 +9,25 @@ function SecSix() {
           Who should take this course?
         </h1>
         <ul className="py-0">
-          <li>Anyone who is curious about programming </li>
-          <li> Entrepreneurs </li>
-          <li>Those looking for a career change </li>
-          <li>Serious coders & hobbyists</li>
-          <li> Students & teenagers </li>
-          <li>Anyone who wants to learn web development</li>
+          <li>
+            <p> Anyone who is curious about programming </p>
+          </li>
+          <li>
+            <p> Entrepreneurs</p>
+          </li>
+          <li>
+            <p>Those looking for a career change </p>
+          </li>
+          <li>
+            <p>Serious coders & hobbyists</p>
+          </li>
+          <li>
+            {" "}
+            <p> Students & teenagers</p>
+          </li>
+          <li>
+            <p>Anyone who wants to learn web development</p>
+          </li>
         </ul>
       </Container>
     </div>

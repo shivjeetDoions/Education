@@ -18,7 +18,7 @@ function SecOne() {
             <SecOneImg />
           </Col>
         </Row>
-        <Row className="d-flex align-self-start">
+        <Row className="d-flex align-self-start pt-5">
           <Col xs={{ span: 6, offset: 0 }} sm={{ span: 3, offset: 0 }}>
             <ApplyNow />
           </Col>

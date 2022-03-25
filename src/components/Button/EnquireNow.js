@@ -28,20 +28,17 @@ function MyVerticallyCenteredModal(props) {
           <EnquireForm {...props} />
         </div>
       </Modal.Body>
-      {/* <Modal.Footer>
-        <Button onClick={props.onHide}>Close</Button>
-      </Modal.Footer> */}
     </Modal>
   );
 }
 
-function EnquiryNow(...props) {
+function EnquiryNow(props) {
   const [modalShow, setModalShow] = React.useState(false);
 
   return (
     <>
       <button
-        className="p-2  px-2 px-md-4 m-2 fw-bold  Custombutton"
+        className="p-3  px-3 px-md-4 m-2 fw-bold  Custombutton"
         onClick={() => setModalShow(true)}
       >
         Enquire Now

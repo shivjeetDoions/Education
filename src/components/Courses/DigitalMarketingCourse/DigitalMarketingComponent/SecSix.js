@@ -1,5 +1,6 @@
 import React from "react";
 import { Container } from "react-bootstrap";
+import ApplyNowDigital from "../../../Button/ApplyNowDigital";
 
 function SecSix() {
   return (
@@ -10,15 +11,26 @@ function SecSix() {
         </h1>
         <ul>
           <li>
-            This course is for beginners - no prior experience is required{" "}
+            <p>
+              This course is for beginners - no prior experience is required{" "}
+            </p>
           </li>
-          <li>This course is for entrepreneurs & hobbyists </li>
-          <li>This course is for those looking for a career change</li>
           <li>
-            This course is for students, artists, content creators and
-            celebrities.
+            <p>This course is for entrepreneurs & hobbyists </p>
+          </li>
+          <li>
+            <p>This course is for those looking for a career change</p>
+          </li>
+          <li>
+            <p>
+              This course is for students, artists, content creators and
+              celebrities.
+            </p>
           </li>
         </ul>
+        <div className="d-flex justify-content-center pt-5">
+          <ApplyNowDigital />
+        </div>
       </Container>
     </div>
   );

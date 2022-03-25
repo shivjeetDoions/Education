@@ -11,22 +11,47 @@ function SecFive() {
         <Row>
           <Col>
             <ul>
-              <li>HTML5</li>
-              <li> CSS3</li>
-              <li>Javascript</li>
-              <li> Bootstrap 4</li>
-              <li>DOM Manipulation</li>
-              <li>NPM</li>
+              <li>
+                <p> HTML5</p>
+              </li>
+              <li>
+                {" "}
+                <p> CSS3</p>
+              </li>
+              <li>
+                <p>Javascript</p>
+              </li>
+              <li>
+                <p> Bootstrap 4</p>
+              </li>
+              <li>
+                <p>DOM Manipulation</p>
+              </li>
+              <li>
+                <p>NPM</p>
+              </li>
             </ul>
           </Col>
           <Col>
             <ul>
-              <li>Node</li>
-              <li> MongoDB</li>
-              <li>REST</li>
-              <li>Express</li>
-              <li>ES6</li>
-              <li>React</li>
+              <li>
+                <p>Node</p>
+              </li>
+              <li>
+                <p> MongoDB</p>
+              </li>
+              <li>
+                <p>REST</p>
+              </li>
+              <li>
+                <p>Express</p>
+              </li>
+              <li>
+                <p>ES6</p>
+              </li>
+              <li>
+                <p>React</p>
+              </li>
             </ul>
           </Col>
         </Row>

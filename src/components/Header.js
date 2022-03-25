@@ -9,14 +9,15 @@ function Header() {
   return (
     <>
       <Navbar expand="lg" bg="white" variant="light">
-        <Container>
-          <Navbar.Brand href="/">
-            <Logo />
-          </Navbar.Brand>
+        <Container className="pt-5 mt-5">
+          <div className="d-flex justify-content-center col-6">
+            <Navbar.Brand href="/">
+              <Logo />
+            </Navbar.Brand>
+          </div>
           <Navbar.Toggle
             aria-controls="responsive-navbar-nav"
-            className="tog "
-            style={{ border: "none", borderRadius: "0px", color: "#E63732" }}
+            className="tog navToggle "
           >
             <MenuBtn />
           </Navbar.Toggle>

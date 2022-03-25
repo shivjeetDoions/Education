@@ -39,10 +39,10 @@ function MyVerticallyCenteredModal(props) {
 function ApplyNowDigital() {
   const [modalShow, setModalShow] = React.useState(false);
   return (
-    <div className="">
+    <div className="p-0">
       <button
         onClick={() => setModalShow(true)}
-        className="p-2 m-2 m-md-0 px-2 px-md-4 fw-bold Custombutton"
+        className="p-3  px-3 px-md-4 m-2 fw-bold Custombutton"
       >
         Apply now
       </button>

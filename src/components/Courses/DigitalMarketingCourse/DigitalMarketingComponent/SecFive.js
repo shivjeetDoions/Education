@@ -9,14 +9,30 @@ function SecFive() {
           Who should take this course?
         </h1>
         <ul>
-          <li>Anyone who is curious about digital marketing </li>
-          <li> Entrepreneurs who wish to promote their business </li>
-          <li>Those looking for a career change </li>
-          <li> Serious marketers & hobbyists</li>
-          <li> Influencers and Artists </li>
-          <li> Students & teenagers </li>
-          <li>Anyone who wants to build their online brand</li>
-          <li>Digital Creators</li>
+          <li>
+            <p>Anyone who is curious about digital marketing</p>{" "}
+          </li>
+          <li>
+            <p> Entrepreneurs who wish to promote their business</p>{" "}
+          </li>
+          <li>
+            <p>Those looking for a career change</p>{" "}
+          </li>
+          <li>
+            <p> Serious marketers & hobbyists</p>
+          </li>
+          <li>
+            <p> Influencers and Artists</p>{" "}
+          </li>
+          <li>
+            <p> Students & teenagers </p>
+          </li>
+          <li>
+            <p>Anyone who wants to build their online brand</p>
+          </li>
+          <li>
+            <p>Digital Creators</p>
+          </li>
         </ul>
       </Container>
     </div>
