@@ -13,7 +13,11 @@ function SecFour() {
           </Col>
         </Row>
         <Row>
-          <Col xs={{ span: 12, order: 1 }} sm={{ span: 6 }}>
+          <Col
+            className="d-flex align-items-center"
+            xs={{ span: 12, order: 1 }}
+            sm={{ span: 6 }}
+          >
             <SecFourImg />
           </Col>
           <Col xs={{ span: 12, order: 1 }} sm={{ span: 6 }}>
