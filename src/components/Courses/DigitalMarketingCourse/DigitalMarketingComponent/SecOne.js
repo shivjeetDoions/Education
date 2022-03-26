@@ -3,8 +3,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import SecOneImg from "./SecOneImg";
 import SecOneMH from "./SecOneMH";
 import SecOneMsg from "./SecOneMsg";
-import KnowMore from "../../../Button/KnowMore";
 import ApplyNowDigital from "../../../Button/ApplyNowDigital";
+import DigitalKnowMore from "../../../Button/DigitalKnowMore";
 function SecOne() {
   return (
     <div>
@@ -23,7 +23,7 @@ function SecOne() {
             <ApplyNowDigital />
           </Col>
           <Col xs={{ span: 6, offset: 0 }} sm={{ span: 3, offset: 0 }}>
-            <KnowMore />
+            <DigitalKnowMore />
           </Col>
         </Row>
       </Container>

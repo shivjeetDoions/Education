@@ -18,23 +18,25 @@ function SuccessFrom(props) {
 
   return (
     <Container>
-      {/* <div className="App"> */}
-      <div ref={tainer} style={{ height: "400px", width: "400px" }}></div>
-      <button
-        type="submit"
-        className="p-2 px-4 me-2 m-3 fw-bold "
-        style={{
-          background: "#E63732",
-          color: "#fff",
-          border: "none",
-        }}
-        onClick={() => {
-          props.onHide();
-        }}
-      >
-        Success
-      </button>
-      {/* </div> */}
+      <div className="d-flex justify-content-center align-items-center">
+        <div ref={tainer} style={{ height: "400px", width: "400px" }}></div>
+      </div>
+      <div className="d-flex justify-content-center align-items-center">
+        <button
+          type="submit"
+          className="p-2 px-4 me-2 m-3 fw-bold "
+          style={{
+            background: "#E63732",
+            color: "#fff",
+            border: "none",
+          }}
+          onClick={() => {
+            props.onHide();
+          }}
+        >
+          Close
+        </button>
+      </div>
     </Container>
   );
 }

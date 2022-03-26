@@ -4,7 +4,8 @@ import SecOneImg from "./SecOneImg";
 import SecOneMH from "./SecOneMH";
 import SecOneMsg from "./SecOneMsg";
 import ApplyNow from "../../../Button/ApplyNow";
-import KnowMore from "../../../Button/KnowMore";
+
+import FullStackKnowMore from "../../../Button/FullStackKnowMore";
 function SecOne() {
   return (
     <div>
@@ -23,7 +24,7 @@ function SecOne() {
             <ApplyNow />
           </Col>
           <Col xs={{ span: 6, offset: 0 }} sm={{ span: 3, offset: 0 }}>
-            <KnowMore />
+            <FullStackKnowMore />
           </Col>
         </Row>
       </Container>

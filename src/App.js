@@ -9,10 +9,12 @@ import Courses from "./components/Courses/AllCourses/AllCourse";
 import FullStack from "./components/Courses/FullStackCourse/FullStackCourse";
 import DigitalMarketing from "./components/Courses/DigitalMarketingCourse/DigitalMarketingCourse";
 import "./App.css";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Header />}>
           <Route index element={<Home />} />

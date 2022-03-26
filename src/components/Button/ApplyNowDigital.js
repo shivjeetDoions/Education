@@ -30,7 +30,7 @@ function MyVerticallyCenteredModal(props) {
             </Row>
           </Container>
         </div>
-        <ApplyFormDigitalMarketing />
+        <ApplyFormDigitalMarketing {...props} />
       </Modal.Body>
     </Modal>
   );

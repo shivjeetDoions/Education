@@ -1,10 +1,10 @@
 import React from "react";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { Container, Row, Col, FormControl } from "react-bootstrap";
 import * as yup from "yup";
 import Submit from "../Button/Submit";
+import SuccessForm from "../Form/SuccessFrom";
 
 const validationSchema = yup.object({
   name: yup.string().required("Name is Required"),
@@ -19,130 +19,170 @@ const validationSchema = yup.object({
     .required("Email is Required.")
     .email("Email is not Valid."),
 });
-const ApplyFormDigitalMarketing = () => {
-  const navigate = useNavigate();
+const ApplyFormDigitalMarketing = (props) => {
+  const [showResults, setShowResults] = React.useState(false);
+  const onClick = () => setShowResults(true);
+
   return (
     <Container>
-      <Row className=" d-flex justify-content-center">
-        <Col md={10}>
-          <Formik
-            validationSchema={validationSchema}
-            initialValues={{ name: "", phone: "", email: "" }}
-            onSubmit={(values, { setSubmitting }) => {
-              console.log(values);
-              navigate("/");
-              axios
-                .post(
-                  "http://localhost:8090/api/message/doions-education",
-                  values
-                )
-                .then(function (response) {
-                  console.log(response);
-                })
-                .catch(function (error) {
-                  console.log(error.response);
-                });
-            }}
-          >
-            <Form>
-              <Field
-                name="name"
-                placeholder="Name"
-                type="text"
-                as={FormControl}
-              />
-              <ErrorMessage name="name" render={CustomError} />
-              <br />
-
-              <Field
-                name="phone"
-                placeholder="Mobile no."
-                type="text"
-                as={FormControl}
-              />
-              <ErrorMessage name="phone" render={CustomError} />
-              <br />
-
-              <Field
-                name="email"
-                placeholder="E-mail"
-                type="email"
-                as={FormControl}
-              />
-              <ErrorMessage name="email" render={CustomError} />
-              <br />
-
-              <div role="group" aria-labelledby="my-radio-group">
-                <h4>When do you want to start this course?</h4>
-                <label>
+      {!showResults && (
+        <Row className=" d-flex justify-content-center">
+          <Col md={10}>
+            <Formik
+              validationSchema={validationSchema}
+              initialValues={{ name: "", phone: "", email: "" }}
+              onSubmit={(values, actions) => {
+                console.log(values);
+                actions.setSubmitting(
+                  axios
+                    .post(
+                      "http://localhost:8090/api/message/doions-education",
+                      values
+                    )
+                    .then(function (response) {
+                      console.log(response);
+                    })
+                    .catch(function (error) {
+                      console.log(error.response);
+                    })
+                );
+              }}
+            >
+              {({ values, errors, touched, dirty, isValid }) => (
+                <Form>
                   <Field
-                    type="radio"
-                    name="StartThisCourse"
-                    value="Within this week"
+                    name="name"
+                    placeholder="Name"
+                    type="text"
+                    as={FormControl}
                   />
-                  &nbsp; Within this week
-                </label>
-                <br />
-                <label>
-                  <Field
-                    type="radio"
-                    name="StartThisCourse"
-                    value="Within this month"
-                  />
-                  &nbsp; Within this month
-                </label>
-                <br />
-                <label>
-                  <Field
-                    type="radio"
-                    name="StartThisCourse"
-                    value=" Next month"
-                  />
-                  &nbsp; Next month
-                </label>
-                <br />
-                <label>
-                  <Field type="radio" name="StartThisCourse" value="other" />
-                  &nbsp; other
-                </label>
-              </div>
+                  <ErrorMessage name="name" render={CustomError} />
+                  <br />
 
-              <br />
-              <div role="group" aria-labelledby="my-radio-group">
-                <h4>Suitable time to contact you.</h4>
-                <label>
-                  <Field type="radio" name="SuitableTime" value=" 09Am- 12pm" />
-                  &nbsp; 09Am- 12pm
-                </label>
-                <br />
-                <label>
-                  <Field type="radio" name="SuitableTime" value="12Pm- 03pm" />
-                  &nbsp; 12Pm- 03pm
-                </label>
-                <br />
-                <label>
                   <Field
-                    type="radio"
-                    name="SuitableTime"
-                    value="   03Pm- 06pm"
+                    name="phone"
+                    placeholder="Mobile no."
+                    type="text"
+                    as={FormControl}
                   />
-                  &nbsp; 03Pm- 06pm
-                </label>
-              </div>
+                  <ErrorMessage name="phone" render={CustomError} />
+                  <br />
 
-              <br />
-              <div className=" d-flex justify-content-center">
-                <Submit />
-              </div>
-            </Form>
-          </Formik>
-        </Col>
-      </Row>
+                  <Field
+                    name="email"
+                    placeholder="E-mail"
+                    type="email"
+                    as={FormControl}
+                  />
+                  <ErrorMessage name="email" render={CustomError} />
+                  <br />
+
+                  <div role="group" aria-labelledby="my-radio-group">
+                    <h4>When do you want to start this course?</h4>
+                    <label>
+                      <Field
+                        type="radio"
+                        name="StartThisCourse"
+                        value="Within this week"
+                      />
+                      &nbsp; Within this week
+                    </label>
+                    <br />
+                    <label>
+                      <Field
+                        type="radio"
+                        name="StartThisCourse"
+                        value="Within this month"
+                      />
+                      &nbsp; Within this month
+                    </label>
+                    <br />
+                    <label>
+                      <Field
+                        type="radio"
+                        name="StartThisCourse"
+                        value=" Next month"
+                      />
+                      &nbsp; Next month
+                    </label>
+                    <br />
+                    <label>
+                      <Field
+                        type="radio"
+                        name="StartThisCourse"
+                        value="other"
+                      />
+                      &nbsp; other
+                    </label>
+                  </div>
+
+                  <br />
+                  <div role="group" aria-labelledby="my-radio-group">
+                    <h4>Suitable time to contact you.</h4>
+                    <label>
+                      <Field
+                        type="radio"
+                        name="SuitableTime"
+                        value=" 09Am- 12pm"
+                      />
+                      &nbsp; 09Am- 12pm
+                    </label>
+                    <br />
+                    <label>
+                      <Field
+                        type="radio"
+                        name="SuitableTime"
+                        value="12Pm- 03pm"
+                      />
+                      &nbsp; 12Pm- 03pm
+                    </label>
+                    <br />
+                    <label>
+                      <Field
+                        type="radio"
+                        name="SuitableTime"
+                        value="   03Pm- 06pm"
+                      />
+                      &nbsp; 03Pm- 06pm
+                    </label>
+                  </div>
+
+                  <br />
+                  <div className=" d-flex justify-content-center">
+                    <button
+                      type="submit"
+                      className="p-2 px-4 me-2 m-3 fw-bold SubBtn"
+                      disabled={!dirty || !isValid}
+                      style={{
+                        background: "#E63732",
+                        color: "#fff",
+                        border: "none",
+                      }}
+                      // onClick={() => {
+                      //   props.onHide();
+                      // }}
+                      onClick={onClick}
+                    >
+                      Submit
+                    </button>
+                  </div>
+                </Form>
+              )}
+            </Formik>
+          </Col>
+        </Row>
+      )}
+      {showResults && <Results {...props} />}
     </Container>
   );
 };
 
 export default ApplyFormDigitalMarketing;
+const Results = (props) => (
+  <div id="results" className="search-results">
+    <SuccessForm {...props} />
+  </div>
+);
 
 function CustomError(msg) {
   return <div style={{ color: "red" }}>{msg}</div>;

@@ -6,6 +6,9 @@ p {
   list-style: none;
   display: flex;
 }
+.ftrlink {
+  font-size: 23px;
+}
 @font-face {
   font-family: "Menlo Font"; /*Can be any text*/
   src: local("AirbnbCerealMenloFont"),
@@ -15,6 +18,9 @@ p {
   font-family: "Menlo Font";
   font-size: 20px;
   letter-spacing: 0px;
+}
+.container-fluid {
+  font-family: "Menlo Font";
 }
 .container h1 {
   font-size: 2.4em;
@@ -125,6 +131,9 @@ a:hover:-webkit-any-link {
 }
 @media only screen and (max-width: 425px) {
   p {
+    font-size: 15px;
+  }
+  .ftrlink {
     font-size: 15px;
   }
   .Custombutton {

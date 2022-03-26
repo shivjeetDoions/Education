@@ -8,7 +8,7 @@ import TimeImg from "./SecTwoImg/TimeImg";
 function SecTwo() {
   return (
     <div>
-      <Container>
+      <Container id="CourseDetails">
         <h1 className=" py-5 d-flex justify-content-center fw-bold">
           Course Details
         </h1>

@@ -30,7 +30,7 @@ function MyVerticallyCenteredModal(props) {
             </Row>
           </Container>
         </div>
-        <ApplyFormBeginner />
+        <ApplyFormBeginner {...props} />
       </Modal.Body>
     </Modal>
   );

@@ -5,7 +5,7 @@ import SecTwoMH from "../HomeComponents/SecTwoMH";
 import SecTwoMsg from "../HomeComponents/SecTwoMsg";
 function SecTwo() {
   return (
-    <div>
+    <div id="WhoWeAre">
       <Container className="py-0 py-md-5 my-0 my-md-5">
         <Row className="align-items-center">
           <Col xs={{ span: 12, order: 2 }} sm={{ span: 6, order: 1 }}>
