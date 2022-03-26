@@ -68,9 +68,10 @@ function SecTwo() {
               Course Code: <span className="fw-bold">DIGMA01</span>
             </p>
             <p>
-              The course is designed keeping in mind for those who are complete
-              beginner for digital marketing. You can be either a student or a
-              career seeker or an entrepreneur planning to start an e-venture.
+              The course is designed keeping in mind those who are complete
+              beginners in the field of digital marketing. You can either be a
+              student or a career seeker or an entrepreneur planning to start an
+              e-venture.
             </p>
             <p>
               The course will start with absolute basic of digital marketing,
@@ -78,17 +79,19 @@ function SecTwo() {
               engine optimization.
             </p>
             <p>
-              This is a very good starting point, if you wish to become a
-              digital marketer and learn the fundamental of online promotions.
+              This is a great starting point, if you wish to become a digital
+              marketer and learn the fundamental of online promotions.
             </p>
             <p>
               In this course you will learn various techniques of building web
               presence, content strategies, how search engine works, how social
-              media marketing works. The course will also help you understand
-              the concept of SEO and SMO from the concept to real world
-              application. You will also experience a new way of learning where
-              you apply the concepts as soon as you learn them in a real world
-              project.
+              media marketing works.
+            </p>
+            <p>
+              The course will also help you understand the concept of SEO and
+              SMO from the concept to real world application. You will also
+              experience a new way of learning where you apply the concepts as
+              soon as you learn them in a real world project.
             </p>
           </Col>
         </Row>

@@ -66,21 +66,21 @@ function SecTwo() {
         <Row>
           <Col className="py-5">
             <p>
-              The course is designed keeping in mind for those who are complete
-              beginner for web development. You can be either a student or a
-              career seeker or an entrepreneur planning to start an e-venture.
+              The course is designed keeping in mind those who are complete
+              beginners in the field of web development. You can either be a
+              student or a career seeker or an entrepreneur planning to start an
+              e-venture.
             </p>
             <p>
               The course will start with absolute basic of web development and
               takes you till the advance concept like React and Express.
             </p>
             <p>
-              This is a very good starting point, if you wish to become a full
-              stack developer and learn the fundamental of MERN Stack
-              Development.
-            </p>{" "}
+              This is a great starting point, if you wish to become a full stack
+              developer and learn the fundamental of MERN Stack Development.
+            </p>
             <p>
-              JavaScript is the most popular language in the word and React is
+              JavaScript is the most popular language in the world and React is
               the most used web framework for building web applications. Adding
               this to your skill portfolio is a big plus.
             </p>

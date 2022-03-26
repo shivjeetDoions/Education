@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import ContactFrom from "../Form/ContactForm";
 import ContactMH from "./ContactMH";
 
-function index() {
+function index(props) {
   return (
     <div>
       <Container className="py-0 py-md-5">
@@ -14,7 +14,7 @@ function index() {
         </Row>
         <Row className="d-flex justify-content-center">
           <Col md={8}>
-            <ContactFrom />
+            <ContactFrom {...props} />
           </Col>
         </Row>
       </Container>

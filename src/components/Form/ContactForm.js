@@ -1,9 +1,11 @@
 import React from "react";
 import axios from "axios";
-import SuccessForm from "../Form/SuccessFrom";
+
 import { Formik, Form as FormikForm, Field, ErrorMessage } from "formik";
 import { Container, Row, Col, Form, FormControl } from "react-bootstrap";
 import * as yup from "yup";
+
+import SuccessContact from "./SuccessContact";
 
 const validationSchema = yup.object({
   email: yup
@@ -13,9 +15,10 @@ const validationSchema = yup.object({
 
   message: yup.string().required("Message is Required"),
 });
-const EnquireForm = (props) => {
+const ContactForm = (props) => {
   const [showResults, setShowResults] = React.useState(false);
   const onClick = () => setShowResults(true);
+
   return (
     <Container>
       {!showResults && (
@@ -98,11 +101,11 @@ const EnquireForm = (props) => {
   );
 };
 
-export default EnquireForm;
+export default ContactForm;
 
 const Results = (props) => (
   <div id="results" className="search-results">
-    <SuccessForm {...props} />
+    <SuccessContact {...props} />
   </div>
 );
 
