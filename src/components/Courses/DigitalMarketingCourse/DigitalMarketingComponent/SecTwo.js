@@ -22,7 +22,7 @@ function SecTwo() {
             </div>
             <div className="d-flex justify-content-center text-center">
               <p>
-                Awailable <br /> in shifts
+                Available <br /> in shifts
               </p>
             </div>
           </Col>

@@ -20,8 +20,8 @@ function SecFour() {
           </li>
           <li>
             <p>
-              Get your FREE developer portfolio/blog with myty - 1 year access
-              of worth Rs 2100/-
+              Get your FREE portfolio/blog with myty - 1 year access of worth Rs
+              2100/-
             </p>
           </li>
         </ol>

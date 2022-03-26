@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Logo from "./Logo";
 import Navigation from "./Navigation";
 import { Container, Navbar } from "react-bootstrap";
@@ -6,10 +6,16 @@ import { Outlet } from "react-router-dom";
 import MenuBtn from "./Button/MenuBtn";
 
 function Header() {
+  const [expand, setExpand] = useState(false);
+  const changeIcon = (e) => {
+    console.log(e);
+    setExpand(e);
+  };
+
   return (
     <>
-      <Navbar expand="lg" bg="white" variant="light">
-        <Container className="pt-5 mt-5">
+      <Navbar expand="lg" bg="white" variant="light" onToggle={changeIcon}>
+        <Container className="pt-0 pt-md-5 mt-0 mt-md-5">
           <div className="d-flex justify-content-center col-6">
             <Navbar.Brand href="/">
               <Logo />
@@ -19,7 +25,7 @@ function Header() {
             aria-controls="responsive-navbar-nav"
             className="tog navToggle "
           >
-            <MenuBtn />
+            <MenuBtn expand={expand} />
           </Navbar.Toggle>
           <Navbar.Collapse id="responsive-navbar-nav">
             <Navigation />

@@ -1,5 +1,5 @@
 import React from "react";
-import img4 from "../../image/imgFour.png";
+import img4 from "../../image/imgFour.JPG";
 function SecFourImg() {
   return (
     <div className="me-0 me-md-4">

@@ -1,5 +1,5 @@
 import React from "react";
-import img3 from "../../image/imgThree.png";
+import img3 from "../../image/imgThree.JPG";
 function SecThreeImg() {
   return (
     <div>

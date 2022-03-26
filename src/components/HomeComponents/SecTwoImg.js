@@ -1,5 +1,5 @@
 import React from "react";
-import img2 from "../../image/imgTwo.png";
+import img2 from "../../image/imgTwo.jpeg";
 function SecTwoImg() {
   return (
     <div>

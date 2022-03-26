@@ -42,7 +42,7 @@ function ApplyNow() {
     <div className="p-0">
       <button
         onClick={() => setModalShow(true)}
-        className="p-3 m-2 px-3 px-md-4 fw-bold Custombutton"
+        className="p-2 p-md-3 m-2 px-2 px-md-3 px-md-4 fw-bold Custombutton"
       >
         Apply now
       </button>
