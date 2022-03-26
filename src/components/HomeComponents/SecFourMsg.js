@@ -3,7 +3,7 @@ import React from "react";
 function SecFourMsg() {
   return (
     <div>
-      <p className="pt-4 pt-md-0">
+      <p className="pt-4 pt-md-0 m-0">
         At DOIONS Education, We offer a tech skill learning platform that allows
         you to become better programmer/developer and find an excellent career
         in the field of software development.

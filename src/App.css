@@ -6,6 +6,10 @@ p {
   list-style: none;
   display: flex;
 }
+.LinkAtag {
+  border-bottom: 1px solid #e63732;
+}
+
 .ftrlink {
   font-size: 23px;
 }
