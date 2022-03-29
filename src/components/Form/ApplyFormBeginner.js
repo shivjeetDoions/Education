@@ -53,7 +53,7 @@ const ApplyFormBeginner = (props) => {
               }}
             >
               {({ values, errors, touched, dirty, isValid }) => (
-                <Form>
+                <Form autoComplete="off">
                   <Field
                     name="name"
                     placeholder="Name"

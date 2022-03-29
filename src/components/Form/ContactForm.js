@@ -1,6 +1,5 @@
 import React from "react";
 import axios from "axios";
-
 import { Formik, Form as FormikForm, Field, ErrorMessage } from "formik";
 import { Container, Row, Col, Form, FormControl } from "react-bootstrap";
 import * as yup from "yup";
@@ -12,7 +11,6 @@ const validationSchema = yup.object({
     .string()
     .required("Email is Required.")
     .email("Email is not Valid."),
-
   message: yup.string().required("Message is Required"),
 });
 const ContactForm = (props) => {

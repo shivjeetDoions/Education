@@ -7,7 +7,7 @@ function Footer() {
     <div className="">
       <div className="position-fixed bottom-0 end-0">
         <span className="m-2 btn rounded-circle bg-danger p-4 text-center">
-          <a href="tel://932972268" className="h1 text-white mx-1 ">
+          <a href="tel:+919329722268" className="h1 text-white mx-1 ">
             <AiFillPhone style={{ transform: "rotateZ(10deg)" }} />
           </a>
         </span>
@@ -26,8 +26,8 @@ function Footer() {
                 info@doions.com
               </a>
               <br />
-              <a className="ftrlink" href="tel://932972268">
-                932972268
+              <a className="ftrlink" href="tel:+919329722268">
+                9329722268
               </a>
               <br />
               <a className="ftrlink" href="tel://07613500430">

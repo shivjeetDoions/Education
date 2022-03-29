@@ -13,12 +13,10 @@ const validationSchema = yup.object({
     .matches(/^[0-9]+$/, "Must be only digits")
     .min(10, "Must be exactly 10 digits")
     .max(10, "Must be exactly 10 digits"),
-
   email: yup
     .string()
     .required("Email is Required.")
     .email("Email is not Valid."),
-
   message: yup.string().required("Message is Required"),
 });
 const EnquireForm = (props) => {
@@ -53,7 +51,7 @@ const EnquireForm = (props) => {
               }}
             >
               {({ values, errors, touched, dirty, isValid }) => (
-                <FormikForm>
+                <FormikForm autoComplete="off">
                   <Field
                     name="name"
                     placeholder="Name"

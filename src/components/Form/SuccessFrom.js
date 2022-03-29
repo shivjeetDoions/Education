@@ -18,7 +18,7 @@ function SuccessFrom(props) {
 
   return (
     <Container>
-      <p>Thank you we got your queries, our admin will contact you soon.</p>
+      <p>Thank you we got your query, our admin will contact you soon.</p>
       <div className="d-flex justify-content-center align-items-center">
         <div ref={tainer} style={{ height: "400px", width: "400px" }}></div>
       </div>
